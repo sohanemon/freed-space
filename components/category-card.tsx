@@ -30,7 +30,7 @@ export default function CategoryCard({
       </Text>
       <Img
         src={`/public/assets/images/element/${props.idx}.png`}
-        className="mx-auto w-28 py-4"
+        className="mx-auto mb-4 mt-1 w-28 py-4"
       />
       <Button
         className="mx-auto block px-8"

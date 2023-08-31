@@ -5,6 +5,7 @@ import { Button } from '@/components/ui/button';
 import { Text } from '@/components/ui/text';
 import CategoryCard from '@/components/category-card';
 import { Images } from '@/components/images';
+import Pagination from '@/components/pagination';
 
 interface CategoriesProps extends ComponentProps<'div'> {}
 
@@ -31,6 +32,7 @@ export default function Categories({ className, ...props }: CategoriesProps) {
           <CategoryCard {...el} key={el.idx} />
         ))}
       </div>
+      <Pagination />
     </div>
   );
 }
