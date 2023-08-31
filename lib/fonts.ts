@@ -1,8 +1,8 @@
-import { Fira_Mono as FontMono, Poppins as FontSans } from 'next/font/google';
+import { Fira_Mono as FontMono } from 'next/font/google';
+import localFont from 'next/font/local';
 
-export const fontSans = FontSans({
-  subsets: ['latin'],
-  weight: ['400', '500', '700'],
+export const fontSans = localFont({
+  src: './PingFang SC Regular.ttf',
   variable: '--font-sans',
 });
 

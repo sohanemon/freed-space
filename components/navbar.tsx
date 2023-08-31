@@ -11,7 +11,7 @@ import { cn, isNavActive } from '@/lib/utils';
 import Brand from './brand';
 import { Icons } from './icons';
 import Motion from './motion';
-import { ThemeToggle } from './theme-toggle';
+import { Button } from './ui/button';
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -42,10 +42,9 @@ export default function Navbar() {
       whileInView={{}}
       className={cn('bg-background fixed inset-x-0 top-0 z-40', {})}
     >
-      <nav className="container flex items-center justify-between px-5 ">
+      <nav className="container flex items-center justify-between px-5 py-7 text-black ">
         <div className="flex items-center gap-4">
           <Brand />
-          <ThemeToggle />
         </div>
         <NavContent />
         {!isMenuOpen ? (
@@ -61,6 +60,7 @@ export default function Navbar() {
             className="text-foreground cursor-pointer lg:hidden"
           />
         )}
+        <Button className="max-lg:hidden">Discover </Button>
       </nav>
       <AnimatePresence>
         {isMenuOpen && <NavContentMob setIsMenuOpen={setIsMenuOpen} />}
@@ -73,7 +73,7 @@ const NavContent = () => {
   const path = usePathname();
   return (
     <>
-      <ul className="ml-20 flex items-center gap-12 max-lg:hidden ">
+      <ul className="ml-20 flex items-center gap-8 max-lg:hidden ">
         {siteConfig.nav.map((_) => (
           <li
             key={_.title}
@@ -81,7 +81,7 @@ const NavContent = () => {
               'text-primary': isNavActive(_.href, path),
             })}
           >
-            <h3 className="px-3 capitalize">
+            <h3 className="px-3 uppercase">
               <Link href={_.href}>{_.title}</Link>
             </h3>
             {isNavActive(_.href, path) && (

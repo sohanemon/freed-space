@@ -1,13 +1,14 @@
 export type SiteConfig = typeof siteConfig;
 
 export const siteConfig = {
-  name: 'Next.js',
-  description: 'Structured Next.js Template',
+  name: 'Freed Space',
+  description:
+    'Hua ZangNET COLLECTIONFOR YOU World Yuan UniverseThree Holy Halls',
   nav: [
-    { title: 'home', href: '/' },
-    { title: 'images', href: '/images' },
-    { title: 'blog', href: '/blog' },
-    { title: 'contact', href: '/contact' },
-    { title: 'about', href: '/about' },
+    { title: 'HOME', href: '/' },
+    { title: 'NFT', href: '/nft' },
+    { title: 'mint', href: '/mint' },
+    { title: 'About us', href: '/about' },
+    { title: 'Link Wallet', href: '/wallet' },
   ],
 };

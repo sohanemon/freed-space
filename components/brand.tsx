@@ -3,8 +3,6 @@ import Link from 'next/link';
 
 import { cn } from '@/lib/utils';
 
-import { Icons } from './icons';
-
 interface CompType {}
 
 export default function Brand({
@@ -12,8 +10,8 @@ export default function Brand({
   ...props
 }: HtmlHTMLAttributes<HTMLAnchorElement> & CompType) {
   return (
-    <Link href={'/'} {...props} className={cn('', {}, className)}>
-      <Icons.logo />
+    <Link href={'/'} {...props} className={cn('text-xl', {}, className)}>
+      logo
     </Link>
   );
 }
