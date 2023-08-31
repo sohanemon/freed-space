@@ -6,7 +6,8 @@ export const textVariants = cva([], {
       default: 'text-foreground',
       primary: 'text-primary',
       secondary: 'text-secondary',
-      muted: 'text-muted',
+      black: 'text-black',
+      muted: 'text-muted/60',
       mutedBlack: 'text-black text-opacity-60',
     },
     intent: {
@@ -14,7 +15,7 @@ export const textVariants = cva([], {
       title: ' text-white text-[50px] font-semibold uppercase',
     },
     size: {
-      sm: 'text-xs ',
+      sm: 'text-xs leading-normal ',
       default: 'text-base ',
       lg: 'text-xl ',
       xl: 'text-2xl ',

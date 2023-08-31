@@ -1,20 +1,13 @@
-import Image from 'next/image';
-import { AlignJustify, Moon, Sun, X } from 'lucide-react';
+import { AlignJustify, LucideProps, X } from 'lucide-react';
+
+import { IconProps, ImgProps } from '@/types/img.type';
+
+import Img from './ui/img';
 
 export const Icons = {
-  sun: Sun,
-  moon: Moon,
   menu: AlignJustify,
   x: X,
-  logo: (props: any) => (
-    <Image
-      {...props}
-      priority
-      className=""
-      src={`/cat.png`}
-      alt="logo"
-      width={100}
-      height={100}
-    />
+  bell: (props: IconProps) => (
+    <Img {...props} src="/public/assets/images/bell.svg" aspectRatio="54/54" />
   ),
 };

@@ -8,6 +8,8 @@ export const buttonVariants = cva(
     variants: {
       intent: {
         default: 'bg-primary text-primary-foreground hover:bg-primary/90',
+        accent:
+          'bg-accent font-normal text-accent-foreground hover:bg-accent/90 ',
         destructive:
           'bg-destructive text-destructive-foreground hover:bg-destructive/90',
         outline:
@@ -19,8 +21,8 @@ export const buttonVariants = cva(
       },
       size: {
         default: 'h-10 py-2 px-8',
-        sm: 'h-9 px-3 rounded-md',
-        lg: 'h-11 px-8 rounded-md',
+        sm: 'h-9 px-3',
+        lg: 'h-11 px-8',
         icon: 'h-10 w-10',
       },
     },

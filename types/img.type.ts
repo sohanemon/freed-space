@@ -8,3 +8,8 @@ export interface ImgProps extends HTMLAttributes<HTMLDivElement> {
   placeholderProps?: {};
   loading?: 'lazy' | 'eager';
 }
+
+export interface IconProps extends HTMLAttributes<HTMLImageElement> {
+  aspectRatio?: `${number}/${number}`;
+  imageClassName?: string;
+}
