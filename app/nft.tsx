@@ -11,7 +11,7 @@ interface NftProps extends ComponentProps<'div'> {}
 export default function Nft({ className, ...props }: NftProps) {
   return (
     <div
-      className={cn('container flex items-center gap-10', className, {})}
+      className={cn('container mb-24 flex items-center gap-10', className, {})}
       {...props}
     >
       <div className="max-w-xs">
