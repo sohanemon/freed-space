@@ -17,7 +17,7 @@ export default function Hero({ className, ...props }: HeroProps) {
           Discover NFTs by category, track the latest drops and follow the
           collections you love. Enjoyit
         </Text>
-        <Img src="/public/assets/images/gods.svg" ratio="1109/641" />
+        <Img src="/public/assets/images/gods.svg" aspectRatio="1109/641" />
       </div>
     </>
   );

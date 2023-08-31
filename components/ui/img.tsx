@@ -9,12 +9,12 @@ export default function Img({
   src,
   placeholderProps,
   children,
-  ratio,
+  aspectRatio = '1/1',
   ...props
 }: ImgProps) {
   return (
     <div
-      style={{ aspectRatio: ratio || '1/1' }}
+      style={{ aspectRatio: aspectRatio }}
       className={cn('relative w-full overflow-hidden', className)}
       {...props}
     >
@@ -22,7 +22,7 @@ export default function Img({
         src={cleanSrc(src!)}
         className={cn(
           'object-contain',
-          { 'object-cover': ratio },
+          { 'object-cover': aspectRatio },
           imageClassName
         )}
         alt={props.alt || ''}
