@@ -3,7 +3,7 @@ import { cssColorVariable } from '../lib/utils';
 const colors = {
   background: '#FBE791',
   foreground: '#ffffff',
-  muted: 'hsla(226.15, 20.63%, 87.65%, 1)',
+  muted: '#FFFFFF60',
   mutedForeground: 'hsla(225, 7%, 36%, 1)',
   primary: '#00494F',
   primaryForeground: 'hsla(0, 0%, 100%, 1)',

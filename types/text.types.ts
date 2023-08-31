@@ -9,6 +9,7 @@ export interface TextProps
   extends ComponentPropsWithRef<'h4'>,
     Omit<TextVariantsType, 'size' | 'weight' | 'color'> {
   as?: ElementType;
+  center?: boolean;
   variant?: `${NonNullable<TextVariantsType['size']>}/${NonNullable<
     TextVariantsType['weight']
   >}/${NonNullable<TextVariantsType['color']>}`;

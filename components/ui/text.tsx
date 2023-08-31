@@ -7,7 +7,14 @@ import { textVariants } from './variants/text.variants';
 
 const Text = forwardRef<HTMLParagraphElement, TextProps>(
   (
-    { className, as, variant = 'default/default/default', intent, ...props },
+    {
+      className,
+      as,
+      center,
+      variant = 'default/default/default',
+      intent,
+      ...props
+    },
     ref
   ) => {
     const [size, weight, color] = intent
@@ -20,7 +27,10 @@ const Text = forwardRef<HTMLParagraphElement, TextProps>(
     const Comp = as || 'p';
     return (
       <Comp
-        className={cn(textVariants({ color, size, weight, intent, className }))}
+        className={cn(
+          textVariants({ color, size, weight, intent, className }),
+          { 'text-center mx-auto': center }
+        )}
         ref={ref}
         {...props}
       />

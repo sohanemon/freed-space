@@ -54,3 +54,8 @@ export function cssColorVariable(colors: Record<string, string>) {
   });
   return temp;
 }
+
+export function cleanSrc(src: string) {
+  if (src.includes('/public/')) return src.replace('/public/', '/');
+  return src;
+}
