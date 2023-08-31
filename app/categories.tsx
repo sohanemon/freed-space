@@ -1,6 +1,6 @@
 import { ComponentProps } from 'react';
+import { cn } from '@sohanemon/utils';
 
-import { cn } from '@/lib/utils';
 import { Button } from '@/components/ui/button';
 import { Text } from '@/components/ui/text';
 import CategoryCard from '@/components/category-card';

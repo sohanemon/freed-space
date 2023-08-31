@@ -1,6 +1,7 @@
 import Img from '@/components/ui/img';
 
 import Categories from './categories';
+import GamePlay from './game-play';
 import Hero from './hero';
 import Nft from './nft';
 
@@ -17,6 +18,7 @@ export default async function IndexPage() {
         <div className="absolute inset-0 z-10 pt-96">
           <Nft />
           <Categories />
+          <GamePlay />
         </div>
       </div>
     </section>

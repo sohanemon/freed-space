@@ -1,4 +1,4 @@
-import { cssColorVariable } from '../lib/utils';
+import { cssColorVariable } from '@sohanemon/utils';
 
 const colors = {
   background: '#FBE791',

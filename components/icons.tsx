@@ -1,8 +1,6 @@
-import { AlignJustify, LucideProps, X } from 'lucide-react';
-
-import { IconProps, ImgProps } from '@/types/img.type';
-
-import Img from './ui/img';
+import { Img } from '@sohanemon/next-image';
+import { IconProps } from '@sohanemon/next-image/dist/types/img.type';
+import { AlignJustify, X } from 'lucide-react';
 
 export const Icons = {
   menu: AlignJustify,

@@ -1,8 +1,7 @@
 'use client';
 
 import { ComponentProps, useState } from 'react';
-
-import { cn } from '@/lib/utils';
+import { cn } from '@sohanemon/utils';
 
 interface PaginationProps extends ComponentProps<'section'> {}
 

@@ -1,6 +1,6 @@
 import { ComponentProps } from 'react';
+import { cn } from '@sohanemon/utils';
 
-import { cn } from '@/lib/utils';
 import Img from '@/components/ui/img';
 import { Text } from '@/components/ui/text';
 
