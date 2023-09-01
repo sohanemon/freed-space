@@ -20,7 +20,7 @@ export default async function IndexPage() {
           <Nft />
           <Categories />
           <GamePlay />
-          <Cta />
+          <Cta className="mt-36" />
         </div>
       </div>
     </section>
