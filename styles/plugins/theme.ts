@@ -70,8 +70,8 @@ export const theme = plugin(
           },
         },
         animation: {
-          slideDown: 'slideDown 300ms cubic-bezier(0.87, 0, 0.13, 1)',
-          slideUp: 'slideUp 300ms cubic-bezier(0.87, 0, 0.13, 1)',
+          slideDown: 'slideDown 200ms ease-out',
+          slideUp: 'slideUp 200ms ease-out',
         },
       },
     },

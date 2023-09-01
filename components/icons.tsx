@@ -1,10 +1,11 @@
 import Img from '@sohanemon/next-image';
 import { IconProps } from '@sohanemon/next-image/dist/types/img.type';
-import { AlignJustify, X } from 'lucide-react';
+import { AlignJustify, ChevronDown, X } from 'lucide-react';
 
 export const Icons = {
   menu: AlignJustify,
   x: X,
+  chevron: ChevronDown,
   bell: (props: IconProps) => (
     <Img {...props} src="/public/assets/images/bell.svg" />
   ),

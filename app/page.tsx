@@ -1,6 +1,7 @@
 import Img from '@sohanemon/next-image';
 
 import Categories from './categories';
+import Cta from './cta';
 import GamePlay from './game-play';
 import Hero from './hero';
 import Nft from './nft';
@@ -19,6 +20,7 @@ export default async function IndexPage() {
           <Nft />
           <Categories />
           <GamePlay />
+          <Cta />
         </div>
       </div>
     </section>
