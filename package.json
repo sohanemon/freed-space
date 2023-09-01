@@ -18,7 +18,7 @@
     "@radix-ui/react-slot": "^1.0.2",
     "@radix-ui/react-tabs": "^1.0.4",
     "@sohanemon/motion": "latest",
-    "@sohanemon/next-image": "latest",
+    "@sohanemon/next-image": "^2.0.6",
     "@sohanemon/utils": "latest",
     "class-variance-authority": "^0.4.0",
     "lucide-react": "0.105.0-alpha.4",

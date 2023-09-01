@@ -6,6 +6,12 @@ export const Icons = {
   menu: AlignJustify,
   x: X,
   bell: (props: IconProps) => (
-    <Img {...props} src="/public/assets/images/bell.svg" aspectRatio="54/54" />
+    <Img {...props} src="/public/assets/images/bell.svg" />
+  ),
+  globe: (props: IconProps) => (
+    <Img inject {...props} src="/public/assets/images/globe.svg" />
+  ),
+  plugin: (props: IconProps) => (
+    <Img inject {...props} src="/public/assets/images/plugin.svg" />
   ),
 };

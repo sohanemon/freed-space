@@ -2,14 +2,11 @@
 
 import { ComponentProps } from 'react';
 import * as Tabs from '@radix-ui/react-tabs';
-import Img from '@sohanemon/next-image';
 import { cn } from '@sohanemon/utils';
 
 import { Text } from '@/components/ui/text';
+import { Icons } from '@/components/icons';
 import { Images } from '@/components/images';
-
-import Globe from '../public/assets/images/globe.svg';
-import Plugin from '../public/assets/images/plugin.svg';
 
 interface GamePlayProps extends ComponentProps<'div'> {}
 
@@ -21,16 +18,15 @@ export default function GamePlay({ className, ...props }: GamePlayProps) {
           Introduction to gameplay
         </Text>
         <Images.lotusSm className="absolute inset-x-0 -top-4 m-auto w-[175px]" />
-        <Images.lotusXl className="fixed -top-16  right-0 m-auto w-[524px]" />
-        <Tabs.Root>
+        <Images.lotusXl className="fixed -top-16  right-0 m-auto w-[524px] [&>img]:object-contain" />
+        <Tabs.Root defaultValue="Introduction to Huazang World">
           <Tabs.List className="my-8 space-x-20">
             {tabs.map((el) => (
               <Tabs.Trigger
                 className="group inline-flex items-center gap-2"
                 value={el.label}
               >
-                {/* {el.icon} */}
-                {/* <el.icon className="group-aria-selected:text-accent w-7 text-white" /> */}
+                <el.icon className="group-aria-selected:text-accent w-7 text-white" />
                 <Text
                   variant="lg/bold/default"
                   className="group-aria-selected:text-accent"
@@ -50,10 +46,10 @@ export default function GamePlay({ className, ...props }: GamePlayProps) {
 const tabs = [
   {
     label: 'Introduction to Huazang World',
-    icon: <Globe />,
+    icon: Icons.globe,
   },
   {
     label: 'Introduction to Fragment Gaming',
-    icon: <Plugin />,
+    icon: Icons.plugin,
   },
 ];
