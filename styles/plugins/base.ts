@@ -28,7 +28,7 @@ export const base = plugin(function ({ addBase }) {
         scrollBehavior: 'smooth !important',
       },
       body: {
-        '@apply bg-background text-foreground min-h-screen antialiased overflow-x-hidden selection:text-white selection:bg-primary':
+        '@apply bg-gradient-to-b from-background to-[#002127] from-50% to-50% text-foreground min-h-screen antialiased overflow-x-hidden selection:text-white selection:bg-primary':
           {},
         'font-feature-settings': `'rlig' 1, 'calt' 1`,
       },

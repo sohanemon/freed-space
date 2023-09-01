@@ -2,6 +2,7 @@ import Img from '@sohanemon/next-image';
 
 import Categories from './categories';
 import Cta from './cta';
+import Cta2 from './cta-2';
 import GamePlay from './game-play';
 import Hero from './hero';
 import Nft from './nft';
@@ -21,6 +22,11 @@ export default async function IndexPage() {
           <Categories />
           <GamePlay />
           <Cta className="mt-36" />
+          <Cta2 className="my-32" />
+          <br />
+          <br />
+          <br />
+          <br />
         </div>
       </div>
     </section>
