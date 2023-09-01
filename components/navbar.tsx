@@ -1,16 +1,19 @@
 'use client';
 
-import { useCallback, useEffect, useState } from 'react';
+import { useCallback, useState } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import Motion, {
+  AnimatePresence,
+  useMotionValueEvent,
+  useScroll,
+} from '@sohanemon/motion';
 import { cn, isNavActive } from '@sohanemon/utils';
-import { AnimatePresence, useScroll } from 'framer-motion';
 
 import { siteConfig } from '@/config/site';
 
 import Brand from './brand';
 import { Icons } from './icons';
-import Motion from './motion';
 import { Button } from './ui/button';
 
 export default function Navbar() {
@@ -19,28 +22,19 @@ export default function Navbar() {
   const [hidden, setHidden] = useState(false);
 
   const update = useCallback(() => {
-    if (scrollY.get() > scrollY.getPrevious()) {
-      setHidden(true);
-    } else if (scrollY.get() < scrollY.getPrevious()) {
-      setHidden(false);
+    if (scrollY.get() > scrollY.getPrevious() && scrollY.get() > 500) {
+      return setHidden(true);
     }
+    setHidden(false);
   }, [scrollY]);
 
-  useEffect(() => {
-    scrollY.on('change', update);
-  }, [scrollY, update]);
+  useMotionValueEvent(scrollY, 'change', update);
 
   return (
     <Motion
-      initial={{ y: -200, opacity: 0 }}
-      animate={
-        hidden
-          ? { y: -200, opacity: 0, scale: 0.7 }
-          : { y: 0, opacity: 1, scale: 1 }
-      }
-      transition={{ delay: 0.1, duration: 0.5 }}
-      whileInView={{}}
-      className={cn('bg-background fixed inset-x-0 top-0 z-40', {})}
+      animate={hidden ? 'top' : 'visible'}
+      transition={{ delay: 0.1, duration: 0.7 }}
+      className={cn('bg-background fixed inset-x-0 top-0 z-40')}
     >
       <nav className="container flex items-center justify-between px-5 py-7 text-black ">
         <div className="flex items-center gap-4">

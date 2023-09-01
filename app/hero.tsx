@@ -1,7 +1,7 @@
 import { ComponentProps } from 'react';
+import Img from '@sohanemon/next-image';
 import { cn } from '@sohanemon/utils';
 
-import Img from '@/components/ui/img';
 import { Text } from '@/components/ui/text';
 
 interface HeroProps extends ComponentProps<'div'> {}

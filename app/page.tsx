@@ -1,4 +1,4 @@
-import Img from '@/components/ui/img';
+import Img from '@sohanemon/next-image';
 
 import Categories from './categories';
 import GamePlay from './game-play';

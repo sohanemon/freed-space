@@ -1,8 +1,8 @@
 import { ComponentProps } from 'react';
+import Img from '@sohanemon/next-image';
 import { cn } from '@sohanemon/utils';
 
 import { Button } from './ui/button';
-import Img from './ui/img';
 import { Text } from './ui/text';
 
 interface CategoryCardProps extends ComponentProps<'div'> {

@@ -1,7 +1,7 @@
 import { ComponentProps } from 'react';
+import Img from '@sohanemon/next-image';
 import { cn } from '@sohanemon/utils';
 
-import Img from './ui/img';
 import { Text } from './ui/text';
 
 interface NftCardProps extends ComponentProps<'div'> {}
