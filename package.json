@@ -16,10 +16,10 @@
   "dependencies": {
     "@plaiceholder/next": "^3.0.0",
     "@radix-ui/react-slot": "^1.0.2",
-    "@sohanemon/utils": "latest",
     "@sohanemon/next-image": "latest",
+    "@sohanemon/utils": "latest",
     "class-variance-authority": "^0.4.0",
-    "framer-motion": "^10.16.1",
+    "framer-motion": "^10.16.2",
     "lucide-react": "0.105.0-alpha.4",
     "next": "latest",
     "next-themes": "^0.2.1",
@@ -41,7 +41,7 @@
     "eslint-config-prettier": "^8.10.0",
     "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-tailwindcss": "^3.13.0",
-    "postcss": "^8.4.28",
+    "postcss": "^8.4.29",
     "prettier": "^2.8.8",
     "tailwindcss": "^3.3.3",
     "typescript": "latest"
