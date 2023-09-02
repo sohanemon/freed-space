@@ -1,7 +1,7 @@
 import { cssColorVariable } from '@sohanemon/utils';
 
 const colors = {
-  background: '#FBE791',
+  background: '#002127',
   foreground: '#ffffff',
   muted: '#FFFFFF',
   mutedForeground: 'hsla(225, 7%, 36%, 1)',

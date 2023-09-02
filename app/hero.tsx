@@ -8,7 +8,7 @@ interface HeroProps extends ComponentProps<'div'> {}
 
 export default function Hero({ className, ...props }: HeroProps) {
   return (
-    <>
+    <section className="bg-secondary pt-32">
       <div className={cn('', className, {})} {...props}>
         <Text center intent={'heading'}>
           Hua ZangNET COLLECTIONFOR YOU World Yuan UniverseThree Holy Halls
@@ -20,6 +20,6 @@ export default function Hero({ className, ...props }: HeroProps) {
 
         <Img src="/public/assets/images/gods.svg" aspectRatio="1109/641" />
       </div>
-    </>
+    </section>
   );
 }

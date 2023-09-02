@@ -13,7 +13,7 @@ interface FooterProps extends ComponentProps<'div'> {}
 export default function Footer({ className, ...props }: FooterProps) {
   return (
     <div className="relative">
-      <div className={cn('bg-background  py-10', className)} {...props}>
+      <div className={cn('bg-secondary  py-10', className)} {...props}>
         <Img
           src="/public/assets/images/lotus-footer.svg"
           aspectRatio="558/328"
