@@ -1,6 +1,5 @@
 import TransitionProvider from '@/context/transition-provider';
 
-import '@/styles/custom.css';
 import '@/styles/globals.css';
 import { Metadata } from 'next';
 import dynamic from 'next/dynamic';
@@ -8,7 +7,6 @@ import { cn } from '@sohanemon/utils';
 
 import { siteConfig } from '@/config/site';
 import { fontSans } from '@/lib/fonts';
-import { TailwindIndicator } from '@/components/tailwind-indicator';
 
 const GoToTop = dynamic(() => import('@/components/goto-top'));
 const Navbar = dynamic(() => import('@/components/navbar'));
@@ -42,7 +40,6 @@ export default function RootLayout({ children }: RootLayoutProps) {
         <body className={cn('pt-32 font-sans', fontSans.variable)}>
           <Navbar />
           <TransitionProvider>{children}</TransitionProvider>
-          <TailwindIndicator />
           <GoToTop />
         </body>
       </html>
