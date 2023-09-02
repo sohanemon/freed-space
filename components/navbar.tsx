@@ -33,7 +33,7 @@ export default function Navbar() {
   return (
     <Motion
       animate={hidden ? 'top' : 'visible'}
-      transition={{ delay: 0.1, duration: 0.7 }}
+      transition={{ delay: 0.1, duration: 0.5 }}
       className={cn('bg-background fixed inset-x-0 top-0 z-40')}
     >
       <nav className="container flex items-center justify-between px-5 py-7 text-black ">

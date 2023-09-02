@@ -28,7 +28,7 @@
     "react": "latest",
     "react-dom": "latest",
     "react-hook-form": "^7.45.4",
-    "react-svg": "^16.1.22",
+    "react-svg": "^16.1.23",
     "swiper": "^10.2.0",
     "zustand": "^4.4.1"
   },

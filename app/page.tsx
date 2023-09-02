@@ -1,7 +1,8 @@
 import Img from '@sohanemon/next-image';
 
+import Footer from '@/components/footer';
+
 import Categories from './categories';
-import Cta from './cta';
 import Cta2 from './cta-2';
 import GamePlay from './game-play';
 import Hero from './hero';
@@ -21,12 +22,9 @@ export default async function IndexPage() {
           <Nft />
           <Categories />
           <GamePlay />
-          <Cta className="mt-36" />
-          <Cta2 className="my-32" />
-          <br />
-          <br />
-          <br />
-          <br />
+          {/* <Cta className="mt-36" /> */}
+          <Cta2 className="my-56" />
+          <Footer />
         </div>
       </div>
     </section>
