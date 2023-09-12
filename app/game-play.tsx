@@ -1,15 +1,15 @@
 'use client';
 
-import { ComponentProps, useState } from 'react';
 import * as Accordion from '@radix-ui/react-accordion';
 import * as Tabs from '@radix-ui/react-tabs';
 import Motion from '@sohanemon/motion';
 import Img from '@sohanemon/next-image';
 import { cn } from '@sohanemon/utils';
+import { ComponentProps, useState } from 'react';
 
-import { Text } from '@/components/ui/text';
 import { Icons } from '@/components/icons';
 import { Images } from '@/components/images';
+import { Text } from '@/components/ui/text';
 
 interface GamePlayProps extends ComponentProps<'div'> {}
 
@@ -22,10 +22,10 @@ export default function GamePlay({ className, ...props }: GamePlayProps) {
           Introduction to gameplay
         </Text>
         <Images.lotusSm className="absolute inset-x-0 -top-4 m-auto w-[175px]" />
-        <Images.lotusXl className="fixed -top-16 right-0 m-auto w-[524px]" />
+        <Images.lotusXl className="fixed -top-16 right-0 m-auto w-[524px] max-md:hidden" />
         <Images.lotusCouple className="absolute -bottom-1/3 right-full m-auto w-[202px]" />
         <Tabs.Root onValueChange={setTab} defaultValue={tabs[0].label}>
-          <Tabs.List className="my-12 space-x-20">
+          <Tabs.List className="my-12 flex gap-4 max-md:flex-col md:gap-20">
             {tabs.map((el) => (
               <Tabs.Trigger
                 className="group relative inline-flex items-center gap-2"
@@ -34,14 +34,14 @@ export default function GamePlay({ className, ...props }: GamePlayProps) {
                 <el.icon className="group-aria-selected:text-accent w-7 text-white" />
                 <Text
                   variant="lg/bold/default"
-                  className="group-aria-selected:text-accent"
+                  className="group-aria-selected:text-accent max-md:text-sm"
                 >
                   {el.label}
                 </Text>
                 {el.label === tab && (
                   <Motion
                     layoutId="underline"
-                    className="bg-accent absolute inset-x-0 -bottom-4 mx-auto h-1 w-12 rounded-full "
+                    className="bg-accent absolute inset-x-0 -bottom-4 mx-auto h-1 w-12 rounded-full max-md:hidden max-md:text-sm "
                   />
                 )}
               </Tabs.Trigger>

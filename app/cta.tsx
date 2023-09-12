@@ -1,6 +1,6 @@
-import { ComponentProps } from 'react';
 import Img from '@sohanemon/next-image';
 import { cn } from '@sohanemon/utils';
+import { ComponentProps } from 'react';
 
 import { Button } from '@/components/ui/button';
 import { Text } from '@/components/ui/text';
@@ -24,11 +24,11 @@ export default function Cta({ className, ...props }: CtaProps) {
           <Button className="mt-10 rounded-lg">VIEW MORE</Button>
         </div>
         <div className="relative z-10">
-          <Img
+          {/* <Img
             src="/public/assets/images/video.png"
             aspectRatio="716/394"
             className="w-[clamp(600px,50vw,700px)]"
-          />
+          /> */}
           <div className="absolute inset-0 m-auto h-fit w-24">
             <div className="absolute inset-0 animate-ping rounded-full border border-white/50 delay-300 duration-500" />
             <div className="absolute inset-4 animate-ping rounded-full border border-white/50 duration-500" />

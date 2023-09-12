@@ -1,11 +1,11 @@
-import { ComponentProps } from 'react';
 import { cn } from '@sohanemon/utils';
+import { ComponentProps } from 'react';
 
-import { Button } from '@/components/ui/button';
-import { Text } from '@/components/ui/text';
 import CategoryCard from '@/components/category-card';
 import { Images } from '@/components/images';
 import Pagination from '@/components/pagination';
+import { Button } from '@/components/ui/button';
+import { Text } from '@/components/ui/text';
 
 interface CategoriesProps extends ComponentProps<'div'> {}
 
@@ -15,19 +15,21 @@ export default function Categories({ className, ...props }: CategoriesProps) {
       <Text center intent={'title'}>
         NFT All Categories
       </Text>
-      <Images.lotusSm className="absolute inset-x-0 -top-4 m-auto w-[175px]" />
-      <div className="my-14  flex justify-center gap-4">
+      <Images.lotusSm className="absolute inset-x-0 -top-4 m-auto w-28 md:w-[175px]" />
+      <div className="my-14  flex flex-wrap justify-center gap-4">
         <Images.lotusLg className="absolute left-0 top-16  w-[321px] -translate-x-1/2" />
         <Button variant="sm/accent" className="px-7 uppercase">
           all
         </Button>
+
         {tabs.map((el) => (
           <Button variant="sm/outline" className="min-w-[80px] px-3 uppercase">
             {el}
           </Button>
         ))}
+
       </div>
-      <div className="grid grid-cols-2 gap-8 md:grid-cols-3 lg:grid-cols-4">
+      <div className="grid grid-cols-1 gap-8  md:grid-cols-3 lg:grid-cols-4">
         {cards.map((el) => (
           <CategoryCard {...el} key={el.idx} />
         ))}
