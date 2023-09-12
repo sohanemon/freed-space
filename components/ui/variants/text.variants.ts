@@ -12,7 +12,7 @@ export const textVariants = cva([], {
     },
     intent: {
       heading: 'md:text-6xl text-3xl font-semibold md:leading-[74px] text-primary ',
-      title: ' text-white text-2xl md:text-[50px] font-semibold uppercase',
+      title: ' text-white text-[32px] md:text-[50px] font-semibold uppercase',
     },
     size: {
       sm: 'text-xs leading-normal ',

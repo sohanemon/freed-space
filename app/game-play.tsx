@@ -25,7 +25,7 @@ export default function GamePlay({ className, ...props }: GamePlayProps) {
         <Images.lotusXl className="fixed -top-16 right-0 m-auto w-[524px] max-md:hidden" />
         <Images.lotusCouple className="absolute -bottom-1/3 right-full m-auto w-[202px]" />
         <Tabs.Root onValueChange={setTab} defaultValue={tabs[0].label}>
-          <Tabs.List className="my-12 flex gap-4 max-md:flex-col md:gap-20">
+          <Tabs.List className="my-12 flex justify-center gap-4 max-md:flex-col md:gap-20">
             {tabs.map((el) => (
               <Tabs.Trigger
                 className="group relative inline-flex items-center gap-2"
