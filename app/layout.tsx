@@ -34,15 +34,13 @@ interface RootLayoutProps {
 
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
-    <>
-      <html lang="en" suppressHydrationWarning>
-        <head className="revert" />
-        <body className={cn('font-sans', fontSans.variable)}>
-          <Navbar />
-          <TransitionProvider>{children}</TransitionProvider>
-          <GoToTop />
-        </body>
-      </html>
-    </>
+    <html lang="en" suppressHydrationWarning>
+      <head className="revert" />
+      <body className={cn('font-sans', fontSans.variable)}>
+        <Navbar />
+        <TransitionProvider>{children}</TransitionProvider>
+        <GoToTop />
+      </body>
+    </html>
   );
 }

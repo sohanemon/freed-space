@@ -581,10 +581,10 @@
     framer-motion "^10.16.2"
     react "^18.2.0"
 
-"@sohanemon/next-image@2.0.6":
-  version "2.0.6"
-  resolved "https://registry.yarnpkg.com/@sohanemon/next-image/-/next-image-2.0.6.tgz#c8f44bf93285d48cf612dd4e95dc32a7c159f52c"
-  integrity sha512-o94fyerFgYv3OBh7nHVcD76+bQByoe9hCK/6p+W+1MUd0X7L50AIHltgQ4euoa85rkTdt7f8LVzYm1/oTrzr0A==
+"@sohanemon/next-image@2.2.2":
+  version "2.2.2"
+  resolved "https://registry.yarnpkg.com/@sohanemon/next-image/-/next-image-2.2.2.tgz#68b104822e7555de5192de0f82634f249af6a12e"
+  integrity sha512-BcAvAyu14gygWUR4g+hAqTnA39DOUw8g97x7iIyB7NbXF7YtewrcjHKYBds/DJlIiho9lP9+HI+VYhMJa8U6EA==
   dependencies:
     "@sohanemon/utils" latest
     next "^13.4.19"

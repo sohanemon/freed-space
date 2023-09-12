@@ -1,14 +1,14 @@
 'use client';
 
+import { useCallback, useState } from 'react';
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import Motion, {
   AnimatePresence,
   useMotionValueEvent,
   useScroll,
 } from '@sohanemon/motion';
 import { cn, isNavActive } from '@sohanemon/utils';
-import Link from 'next/link';
-import { usePathname } from 'next/navigation';
-import { useCallback, useState } from 'react';
 
 import { siteConfig } from '@/config/site';
 
@@ -66,29 +66,27 @@ export default function Navbar() {
 const NavContent = () => {
   const path = usePathname();
   return (
-    <>
-      <ul className="items-c enter ml-20 flex gap-8 max-lg:hidden ">
-        {siteConfig.nav.map((_) => (
-          <li
-            key={_.title}
-            className={cn('relative', {
-              'text-primary': isNavActive(_.href, path),
-            })}
-          >
-            <h3 className="px-3 uppercase">
-              <Link href={_.href}>{_.title}</Link>
-            </h3>
-            {isNavActive(_.href, path) && (
-              <Motion
-                as="span"
-                layoutId="nav-bg"
-                className="bg-primary/10 absolute inset-0 -z-10 rounded-md "
-              />
-            )}
-          </li>
-        ))}
-      </ul>
-    </>
+    <ul className="items-c enter ml-20 flex gap-8 max-lg:hidden ">
+      {siteConfig.nav.map((_) => (
+        <li
+          key={_.title}
+          className={cn('relative', {
+            'text-primary': isNavActive(_.href, path),
+          })}
+        >
+          <h3 className="px-3 uppercase">
+            <Link href={_.href}>{_.title}</Link>
+          </h3>
+          {isNavActive(_.href, path) && (
+            <Motion
+              as="span"
+              layoutId="nav-bg"
+              className="bg-primary/10 absolute inset-0 -z-10 rounded-md "
+            />
+          )}
+        </li>
+      ))}
+    </ul>
   );
 };
 
