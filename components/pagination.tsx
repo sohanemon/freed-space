@@ -19,9 +19,9 @@ export default function Pagination({ className, ...props }: PaginationProps) {
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
               className="feather feather-chevron-left h-4 w-4"
             >
               <polyline points="15 18 9 12 15 6" />
@@ -54,9 +54,9 @@ export default function Pagination({ className, ...props }: PaginationProps) {
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
               className="feather feather-chevron-right h-4 w-4"
             >
               <polyline points="9 18 15 12 9 6"></polyline>

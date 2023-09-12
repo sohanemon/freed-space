@@ -1,17 +1,21 @@
-import { cn } from '@sohanemon/utils';
 import { ComponentProps } from 'react';
+import { cn } from '@sohanemon/utils';
 
-import { Icons } from '@/components/icons';
-import NftCard from '@/components/nft-card';
 import { Button } from '@/components/ui/button';
 import { Text } from '@/components/ui/text';
+import { Icons } from '@/components/icons';
+import NftCard from '@/components/nft-card';
 
 interface NftProps extends ComponentProps<'div'> {}
 
 export default function Nft({ className, ...props }: NftProps) {
   return (
     <div
-      className={cn('container mb-24 flex items-center gap-10 max-md:flex-col', className, {})}
+      className={cn(
+        'container mb-24 flex items-center gap-10 max-md:flex-col',
+        className,
+        {}
+      )}
       {...props}
     >
       <div className="max-w-xs">
@@ -24,7 +28,7 @@ export default function Nft({ className, ...props }: NftProps) {
         <Button variant="default/accent">VIEW MORE</Button>
       </div>
       <div className="grid grow grid-cols-3 gap-4 max-md:grid-cols-1">
-        {Array.from(Array(3)).map((el) => (
+        {Array.from(Array(3).keys()).map((el) => (
           <NftCard key={el} />
         ))}
       </div>

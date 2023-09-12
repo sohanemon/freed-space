@@ -1,11 +1,11 @@
-import { cn } from '@sohanemon/utils';
 import { ComponentProps } from 'react';
+import { cn } from '@sohanemon/utils';
 
+import { Button } from '@/components/ui/button';
+import { Text } from '@/components/ui/text';
 import CategoryCard from '@/components/category-card';
 import { Images } from '@/components/images';
 import Pagination from '@/components/pagination';
-import { Button } from '@/components/ui/button';
-import { Text } from '@/components/ui/text';
 
 interface CategoriesProps extends ComponentProps<'div'> {}
 
@@ -27,7 +27,6 @@ export default function Categories({ className, ...props }: CategoriesProps) {
             {el}
           </Button>
         ))}
-
       </div>
       <div className="grid grid-cols-1 gap-8  md:grid-cols-3 lg:grid-cols-4">
         {cards.map((el) => (
@@ -59,14 +58,14 @@ const cards = [
     label: '大紫草',
     text: '相传是流动的金属，翻译音译叫力泥，实际上叫做流铁。因拥有着自己的意识..',
     bg: '#FFAC0D',
-    textColor: '#000000',
+    textcolor: '#000000',
   },
   {
     idx: 4,
     label: '黄芪',
     text: '相传是流动的金属，翻译音译叫力泥，实际上叫做流铁。因拥有着自己的意识..',
     bg: '#EEEEEE',
-    textColor: '#333333',
+    textcolor: '#333333',
   },
 
   {
@@ -74,14 +73,14 @@ const cards = [
     label: '黄芪',
     text: '相传是流动的金属，翻译音译叫力泥，实际上叫做流铁。因拥有着自己的意识..',
     bg: '#EEEEEE',
-    textColor: '#333333',
+    textcolor: '#333333',
   },
   {
     idx: 3,
     label: '大紫草',
     text: '相传是流动的金属，翻译音译叫力泥，实际上叫做流铁。因拥有着自己的意识..',
     bg: '#FFAC0D',
-    textColor: '#000000',
+    textcolor: '#000000',
   },
   {
     idx: 1,
@@ -101,7 +100,7 @@ const cards = [
     label: '黄芪',
     text: '相传是流动的金属，翻译音译叫力泥，实际上叫做流铁。因拥有着自己的意识..',
     bg: '#EEEEEE',
-    textColor: '#333333',
+    textcolor: '#333333',
   },
   {
     idx: 1,
@@ -114,7 +113,7 @@ const cards = [
     label: '大紫草',
     text: '相传是流动的金属，翻译音译叫力泥，实际上叫做流铁。因拥有着自己的意识..',
     bg: '#FFAC0D',
-    textColor: '#000000',
+    textcolor: '#000000',
   },
   {
     idx: 2,

@@ -1,15 +1,15 @@
 'use client';
 
+import { ComponentProps, useState } from 'react';
 import * as Accordion from '@radix-ui/react-accordion';
 import * as Tabs from '@radix-ui/react-tabs';
 import Motion from '@sohanemon/motion';
 import Img from '@sohanemon/next-image';
 import { cn } from '@sohanemon/utils';
-import { ComponentProps, useState } from 'react';
 
+import { Text } from '@/components/ui/text';
 import { Icons } from '@/components/icons';
 import { Images } from '@/components/images';
-import { Text } from '@/components/ui/text';
 
 interface GamePlayProps extends ComponentProps<'div'> {}
 
@@ -28,6 +28,7 @@ export default function GamePlay({ className, ...props }: GamePlayProps) {
           <Tabs.List className="my-12 flex justify-center gap-4 max-md:flex-col md:gap-20">
             {tabs.map((el) => (
               <Tabs.Trigger
+                key={el.label}
                 className="group relative inline-flex items-center gap-2"
                 value={el.label}
               >
@@ -60,6 +61,7 @@ export default function GamePlay({ className, ...props }: GamePlayProps) {
               <div className="absolute -ml-7 h-full  w-px  translate-y-10 bg-white/20" />
               {accordion.map((item) => (
                 <Accordion.Item
+                  key={item.label}
                   value={item.label}
                   className="flex flex-col  gap-5"
                 >

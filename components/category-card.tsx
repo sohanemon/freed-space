@@ -10,7 +10,7 @@ interface CategoryCardProps extends ComponentProps<'div'> {
   label: string;
   text: string;
   bg: string;
-  textColor?: string;
+  textcolor?: string;
 }
 
 export default function CategoryCard({
@@ -35,7 +35,7 @@ export default function CategoryCard({
         className="mx-auto block px-8"
         variant="sm/ghost"
         style={{
-          color: props.textColor,
+          color: props.textcolor,
           background: props.bg,
         }}
       >
