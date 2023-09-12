@@ -1,14 +1,14 @@
 'use client';
 
-import { useCallback, useState } from 'react';
-import Link from 'next/link';
-import { usePathname } from 'next/navigation';
 import Motion, {
   AnimatePresence,
   useMotionValueEvent,
   useScroll,
 } from '@sohanemon/motion';
 import { cn, isNavActive } from '@sohanemon/utils';
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
+import { useCallback, useState } from 'react';
 
 import { siteConfig } from '@/config/site';
 
@@ -100,7 +100,7 @@ const NavContentMob = ({ setIsMenuOpen }: { setIsMenuOpen: Function }) => {
       initial="up"
       animate="visible"
       exit={'left'}
-      className="bg-card absolute inset-x-0 mx-2 flex flex-col items-start gap-4 rounded-xl p-5 shadow-xl lg:hidden"
+      className="bg-primary absolute inset-x-0 mx-2 flex flex-col items-start gap-4 rounded-xl p-5 shadow-xl lg:hidden"
     >
       {siteConfig.nav.map((_) => (
         <li onClick={() => setIsMenuOpen(false)} key={_.title}>

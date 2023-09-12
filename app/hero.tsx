@@ -1,6 +1,6 @@
-import { ComponentProps } from 'react';
 import Img from '@sohanemon/next-image';
 import { cn } from '@sohanemon/utils';
+import { ComponentProps } from 'react';
 
 import { Text } from '@/components/ui/text';
 
@@ -13,7 +13,7 @@ export default function Hero({ className, ...props }: HeroProps) {
         <Text center intent={'heading'}>
           Hua ZangNET COLLECTIONFOR YOU World Yuan UniverseThree Holy Halls
         </Text>
-        <Text center variant="lg/default/mutedBlack" className="mt-5">
+        <Text center variant="lg/default/mutedBlack" className="mt-5 max-md:text-base">
           Discover NFTs by category, track the latest drops and follow the
           collections you love. Enjoyit
         </Text>

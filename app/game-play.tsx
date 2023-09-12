@@ -55,7 +55,7 @@ export default function GamePlay({ className, ...props }: GamePlayProps) {
             <Accordion.Root
               defaultValue={accordion[0].label}
               type="single"
-              className="space-y-8 pl-16"
+              className="space-y-8 pl-8 md:pl-16"
             >
               <div className="absolute -ml-7 h-full  w-px  translate-y-10 bg-white/20" />
               {accordion.map((item) => (

@@ -24,7 +24,7 @@ export default async function IndexPage() {
           <Categories />
           <GamePlay />
           <Cta className="mt-36" />
-          <Cta2 className="my-56" />
+          <Cta2 className="my-4 md:my-56" />
           <Footer />
         </div>
       </div>

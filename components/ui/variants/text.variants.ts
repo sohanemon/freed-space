@@ -11,7 +11,7 @@ export const textVariants = cva([], {
       mutedBlack: 'text-black text-opacity-60',
     },
     intent: {
-      heading: 'md:text-6xl text-2xl font-semibold md:leading-[74px] text-primary ',
+      heading: 'md:text-6xl text-3xl font-semibold md:leading-[74px] text-primary ',
       title: ' text-white text-2xl md:text-[50px] font-semibold uppercase',
     },
     size: {
