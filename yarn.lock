@@ -621,10 +621,10 @@
   resolved "https://registry.yarnpkg.com/@rushstack/eslint-patch/-/eslint-patch-1.3.3.tgz#16ab6c727d8c2020a5b6e4a176a243ecd88d8d69"
   integrity sha512-0xd7qez0AQ+MbHatZTlI1gu5vkG8r7MYRUJAHPAHJBmGLs16zpkrpAVLvjQKQOqaXPDUBwOiJzNc00znHSCVBw==
 
-"@sohanemon/motion@1.0.5":
-  version "1.0.5"
-  resolved "https://registry.yarnpkg.com/@sohanemon/motion/-/motion-1.0.5.tgz#33faca30c4e77ed6ed0cf6136b32081039b8beff"
-  integrity sha512-OkzcBV17xgVBHDlesQRNg5CeYZqGz8P3upXycEepM/Ta5UXpXZnXQZ6tYdBnAWQo7z1uaCTB7OcCUPbQUxVwyw==
+"@sohanemon/motion@1.0.6":
+  version "1.0.6"
+  resolved "https://registry.yarnpkg.com/@sohanemon/motion/-/motion-1.0.6.tgz#7bebd763f46d02793c0b1f1338bee86aebf75277"
+  integrity sha512-q0oXo8yz7Pgrl3AwSOIHRbqBzreHoBt/ve6T0JMBFLh5exFtWVag9SAx7koyYzRP+hu5ojpUTDfzsC95/xEiSw==
   dependencies:
     "@radix-ui/react-slot" "^1.0.2"
     "@sohanemon/utils" "^1.0.0"
