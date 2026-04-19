@@ -643,16 +643,7 @@
     react-svg "^16.1.22"
     sharp "^0.32.5"
 
-"@sohanemon/utils@1.0.1":
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/@sohanemon/utils/-/utils-1.0.1.tgz#5fc444245cd70b94012e980c5772cdb5f0f1a1f4"
-  integrity sha512-An2S1ImOZh39qRIi5wT65j1lVsB9JuJBuurQUYfrm8g5rPnAgfDz5nDaJn8GvW7etNcqdcQn8WbY/8tMeNl1jQ==
-  dependencies:
-    clsx "^2.0.0"
-    react "^18.2.0"
-    tailwind-merge "^1.14.0"
-
-"@sohanemon/utils@^1.0.0":
+"@sohanemon/utils@1.0.2", "@sohanemon/utils@^1.0.0":
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/@sohanemon/utils/-/utils-1.0.2.tgz#7b507d42dacbdc09c130707354107bdf60f12e07"
   integrity sha512-ohZGMtmpqM65G6syuEgNUo7whpTcbgrxB2UoBTUpG740dB0TTbpF6rY3lceTrlwNxxm43Np7xFKdzZAqC/Gqqw==
